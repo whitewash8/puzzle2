@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100svh;
+    font-family: gotham, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    /* user-select: none; */
+    overflow: hidden;
+}
+
+
+
+
+.log-part {
+    background: linear-gradient(0deg, #2F3344 0%,#414B75 100%);
+    height: 45vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #d4d7e3;
+    padding: 2vh 8vw;
+    font-size: 4vw;
+}
+
+.log-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 74vw;
+    padding: 2vh 0;
+}
+
+.welcome-msg {
+    margin-top: 12vh;
+    font-size: 4vw;
+    line-height: 5vh;
+    text-align: center;
+    color: #99a1c0;
+}
+
+.guessed-number {
+    font-size: 9vw;
+    color: #d4d7e3;
+    font-weight: bold;
+}
+
+.result-container {
+    font-size: 3.8vw;
+}
+
+
+
+
+
+
+
+
+.play-part {
+    height: 45vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vw;   
+}
+
+.rect {
+    position: relative;
+    width: 18vw;
+    height: 25vw;
+    border: 0.4vw solid #cbcfdf;
+    border-radius: 3vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 2vw 0;
+    font-size: 18vw;
+    color: #383d56;
+    font-weight: bold;
+    margin-bottom: 12vh;
+}
+
+.arrow {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    height: auto;
+}
+
+.top-arrow {
+    position: absolute;
+    top: -9.5vw;
+    padding: 2vw 5vw;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.bottom-arrow {
+    position: absolute;
+    top: 25.7vw;
+    padding: 2vw 5vw;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.top-arrow .arrow-image {
+    width: 6.5vw;
+    height: auto;
+}
+
+.bottom-arrow .arrow-image {
+    width: 6.5vw;
+    height: auto;
+    transform: ScaleY(-1);
+}
+
+.guess-button {
+    width: 27vw;
+    height: 11vw;
+    background-image: linear-gradient(0deg, #00CB39 43%, #00E268 57%);
+    border: 0.8vw solid #ffffff;
+    border-radius: 3.5vw;
+    display: box;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0px 0.2vw 0.8vw #190a5a6b;
+    position: absolute;
+    font-size: 6vw;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0px 0.4vw 0.8vw #190a5a6b;
+    bottom: 14vh;
+}
+
+
+
+
+
+
+
+
+.connect-part {
+    height: 10vh;
+    background-color: transparent;
+}
+
+.character-image {
+    position: absolute;
+    width: 25vw;
+    height: auto;
+    /* top: 87vh; */
+    bottom: -6vw;
+    left: 0;
+    animation: float 4s ease-in-out infinite;
+}
+
+.chatbox {
+    position: relative;
+    width: 66vw;
+    height: 7vh;
+    background-color: #f8eddf;
+    border-radius: 3vw;
+    margin-left: 17vw;
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0.4vw 1vw #190a5a6b;
+}
+
+.message {
+    font-size: 3.8vw;
+    padding: 2vh 3vw;
+    line-height: 2.2vh;
+    color: #573c3c;
+    text-align: center;
+}
+
+.ship-mark {
+    position: absolute;
+    font-size: 8vw;
+    font-weight: bold;
+    color: #E2C8C8;
+    right: 1.5vw;
+    top: 93vh;
+}
+
+
+
+
+
+
+.guess-button:active {
+    transform: translateY(0.3vh);
+    transition: transform 0.1s ease-out;
+}
+
+
+.arrow-image:active {
+    filter: brightness(1.1);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(1vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

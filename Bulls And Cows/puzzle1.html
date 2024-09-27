@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITACHI ISLAND</title>
+    <link rel="stylesheet" href="styles/puzzle1.css">
+    <script src="scripts/puzzle1.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="log-part">
+        <div class="welcome-msg">this is an hint... this one is working fine and I don't know how to make the code look good this is an hint
+        </div>
+    </div>
+
+    <div class="play-part">
+        <div class="rect" class="rect-1" onclick="changeNumber(1, 1)">
+            <button class="top-arrow" onclick="changeNumber(1, 0)">
+                <img src="assets/arrow.png" alt="up" class="arrow-image">
+            </button>
+            <div class="digit" id="digit-1">0</div>
+            <button class="bottom-arrow" onclick="changeNumber(1, -2);">
+                <img src="assets/arrow.png" alt="down" class="arrow-image">
+            </button>
+        </div>
+
+        <div class="rect" class="rect-2" onclick="changeNumber(2, 1)">
+            <button class="top-arrow" onclick="changeNumber(2, 0)">
+                <img src="assets/arrow.png" alt="up" class="arrow-image">
+            </button>
+            <div class="digit" id="digit-2">1</div>
+            <button class="bottom-arrow" onclick="changeNumber(2, -2);">
+                <img src="assets/arrow.png" alt="down" class="arrow-image">
+            </button>
+        </div>
+
+        <div class="rect" class="rect-3" onclick="changeNumber(3, 1)">
+            <button class="top-arrow" onclick="changeNumber(3, 0)">
+                <img src="assets/arrow.png" alt="up" class="arrow-image">
+            </button>
+            <div class="digit" id="digit-3">2</div>
+            <button class="bottom-arrow" onclick="changeNumber(3, -2);">
+                <img src="assets/arrow.png" alt="down" class="arrow-image">
+            </button>
+        </div>
+
+        <div class="rect" class="rect-4" onclick="changeNumber(4, 1)">
+            <button class="top-arrow" onclick="changeNumber(4, 0)">
+                <img src="assets/arrow.png" alt="up" class="arrow-image">
+            </button>
+            <div class="digit" id="digit-4">3</div>
+            <button class="bottom-arrow" onclick="changeNumber(4, -2);">
+                <img src="assets/arrow.png" alt="down" class="arrow-image">
+            </button>
+        </div>
+
+        <button class="guess-button" onclick="handleGuessClick()">GUESS</button>
+    </div>
+
+    <div class="connect-part">
+        <div class="chatbox">
+            <div class="message">...</div>
+        </div>
+        <img src="assets/character-face.png" alt="character" class="character-image">
+        <span class="ship-mark">#00</span>
+    </div>

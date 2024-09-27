@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Funky';
+    src: url('../fonts/kids-magazine.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100svh;
+    font-family: gotham, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, #0F9CD8 0%, #02FFD1 50%, #00E0FF 100%);
+    /* user-select: none; */
+    overflow: hidden;
+    
+}
+
+
+
+
+
+
+
+
+
+.title-part {
+    height: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    width: 100%;
+    font-family: "Funky", fotham, sans-serif;
+    background-color: transparent;
+}
+
+.title-text {
+    font-size: 12vw;
+    color: #ffffff;
+    text-shadow: 0 0.4vw 1.4vh #09003a7c;
+    line-height: 16vw;
+    text-align: center;
+    display: block;
+    animation: bounce 3s ease-in-out infinite;
+}
+
+.island-part {
+    position: relative;
+    height: 48vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-bottom: 4vh;
+}
+
+.island-image {
+    width: 75vw;
+    height: auto;
+    filter: saturate(70%);
+}
+
+
+
+
+
+
+
+
+
+
+.first-screen {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    background-color: transparent;
+    /* display: none; */
+}
+
+.register-box {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vw;
+    height: 14vw;
+    width: 75vw;
+    background-color: #f5f5f5;
+    border-radius: 4vw;
+    display: flex;
+    margin-left: 12.5vw;
+}
+
+.text-box {
+    font-size: 8vw;
+    font-weight: bold;
+    position: absolute;
+    left: 16vw;
+    color: #6d7a91;
+}
+
+.input-box {
+    color: #778091;
+    width: 18vw;
+    height: 11vw;
+    font-size: 8vw;
+    border-radius: 2.7vw;
+    text-align: center;
+    font-weight: bold;
+    border: 0.5vw solid #ffacc1;
+    position: absolute;
+    left: 37vw;
+}
+
+.enter-button {
+    width: 20vw;
+    height: 11.5vw;
+    background-image: linear-gradient(0deg, #00CB39 43%, #00E268 57%);
+    border: 0.8vw solid #ffffff;
+    border-radius: 3.5vw;
+    display: box;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0px 0.2vw 1.2vw #190a5a6b;
+    position: absolute;
+    right: 15vw;
+}
+
+
+.credits {
+    height: 20vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.credits-text span {
+    font-size: 4.2vw;
+    font-weight: bold;
+    letter-spacing: 2.6vw;
+    color: #bbfbff;
+    line-height: 8vw;
+    text-align: center;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.second-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.chatbox {
+    position: absolute;
+    bottom: 10vh;
+    width: 70vw;
+    height: 22vh;
+    background-color: #f5f5f565;
+    border: 0.6vw solid #ffffff;
+    border-radius: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30vw;
+    margin-right: 8vw;
+}
+
+.message {
+    font-size: 4vw;
+    padding: 3vh 5.5vw;
+    font-weight: bold;
+    line-height: 3vh;
+    color: #497eb0;
+    text-align: center;
+}
+
+.character-image {
+    width: 36vw;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 60vh;
+    /* bottom: -20vw; */
+    animation: float 3s ease-in-out infinite;
+}
+
+.navigator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2vh;
+    width: 68vw;
+    height: 6vh;
+    background-color: transparent;
+    right: 5vw;
+}
+
+
+.forward-button {
+    width: 20vw;
+    height: 11.5vw;
+    background-image: linear-gradient(0deg, #00CB39 43%, #00E268 57%);
+    border: 0.8vw solid #ffffff;
+    border-radius: 3.5vw;
+    display: box;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0px 0.2vw 1.2vw #190a5a6b;
+    position: absolute;
+    right: 15vw;
+}
+
+.forward-arrow-image {
+    height: 10vw;
+    width: auto;
+}
+
+.backward-button {
+    width: 20vw;
+    height: 11.5vw;
+    background-color: transparent;
+    border-color: transparent;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -29vw;
+}
+
+.backward-arrow-image {
+    height: 10vw;
+    filter:opacity(70%);
+    transform: scaleX(-1);
+}
+
+.ship-mark {
+    font-size: 8vw;
+    font-weight: bold;
+    right: 22vw;
+    position: absolute;
+    color: #83e9ff;
+}
+
+.navigator .forward-button {
+    right: -1vw;
+}
+
+
+
+
+
+
+
+
+button:active {
+    transform: translateY(0.3vh);
+    transition: transform 0.1s ease-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: Scale(1);
+    }
+    50% {
+        transform: Scale(0.95);
+    }
+    100% {
+        transform: Scale(1);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(1vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
