@@ -150,7 +150,7 @@ function showRandomMessage() {
 
 function triggerUnlock() {
     if (navigator.vibrate) {
-        navigator.vibrate([500, 100, 500]);
+        navigator.vibrate([200, 100, 500]);
     }
     confetti({
         particleCount: 100,

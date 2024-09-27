@@ -62,7 +62,7 @@ function typeMessage(message, element, delay) {
     typing();
 }
 
-function startTypingAnimation(index, typingDelay = 35) {
+function startTypingAnimation(index, typingDelay = 30) {
     const messageElement = document.getElementById('animated-message');
     const backwardButton = document.querySelector('.backward-button');
 
