@@ -190,11 +190,11 @@ body {
 
 .ship-mark {
     position: absolute;
-    font-size: 8vw;
+    font-size: 7vw;
     font-weight: bold;
     color: #E2C8C8;
-    right: 1.5vw;
-    top: 93vh;
+    right: 1vw;
+    bottom: 2vh;
 }
 
 

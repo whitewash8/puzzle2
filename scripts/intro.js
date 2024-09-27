@@ -28,9 +28,8 @@ function handleForwardClick() {
 const messages = [
     "Welcome to the itachi island..land of the greatest mathematician itachi",
     "all we know is...when he died, he put the treasure piece in the unbreakable box",
-    "you can only open the box with a 4 digit pincode with non repeating digits",
-    "don't worry, you are allowed to make infinite guesses",
-    "and with each guess, you get a hint....best luck"
+    "you can only open the box with a 4 digit secret code with non repeating digits",
+    "don't worry, you will get infinite guesses and hints with each guess",
 ];
 
 let currentMessageIndex = 0;

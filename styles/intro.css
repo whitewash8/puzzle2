@@ -36,7 +36,7 @@ body {
     font-family: "Funky", gotham, sans-serif;
     background-color: transparent;
     position: absolute;
-    top: 5vh;
+    top: 4vh;
 }
 
 .title-text {
@@ -51,7 +51,8 @@ body {
 
 .island-part {
     position: absolute;
-    top: 22vh;
+    /* top: 22vh; */
+    bottom: 28vh;
     height: 48vh;
     width: 100%;
     display: flex;
