@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     background: #ffffff;
-    /* user-select: none; */
+    user-select: none;
     overflow: hidden;
 }
 
@@ -39,9 +39,10 @@ body {
 }
 
 .welcome-msg {
-    margin-top: 12vh;
+    margin-top: 15vh;
     font-size: 4vw;
-    line-height: 5vh;
+    padding: 0vh 6vw;
+    line-height: 4vh;
     text-align: center;
     color: #99a1c0;
 }
@@ -163,7 +164,7 @@ body {
     /* top: 87vh; */
     bottom: -6vw;
     left: 0;
-    animation: float 4s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
 }
 
 .chatbox {
@@ -217,7 +218,7 @@ body {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(1vh);
+        transform: translateY(0.6vh);
     }
     100% {
         transform: translateY(0);

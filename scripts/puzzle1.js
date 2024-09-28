@@ -41,12 +41,12 @@ function handleGuessClick() {
         if (guessedNumbers.has(guessedNumber)) {
             showMessage("this number was already guessed", '#ff5252');
             navigator.vibrate([100]);
+            alert(`${generatedNumber}`);
             return;
         }
         if (new Set(guessedNumber).size !== guessedNumber.length) {
             showMessage("no repetition allowed", '#ff5252');
             navigator.vibrate([100]);
-            alert(`${generatedNumber}`);
             return;
         }
         if (isFirstGuess) {
@@ -150,7 +150,7 @@ function showRandomMessage() {
 
 function triggerUnlock() {
     if (navigator.vibrate) {
-        navigator.vibrate([200, 100, 500]);
+        navigator.vibrate([100, 50, 400]);
     }
     confetti({
         particleCount: 100,

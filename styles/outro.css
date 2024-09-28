@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(0deg, #FFA661 0%, #FFEE59 66%, #FFA661 100%);
-    /* user-select: none; */
+    user-select: none;
     overflow: hidden;
 }
 

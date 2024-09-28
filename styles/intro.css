@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(0deg, #0F9CD8 0%, #02FFD1 50%, #00E0FF 100%);
-    /* user-select: none; */
+    user-select: none;
     overflow: hidden;
     
 }
@@ -52,14 +52,13 @@ body {
 .island-part {
     position: absolute;
     /* top: 22vh; */
-    bottom: 28vh;
+    bottom: 27vh;
     height: 48vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    padding-bottom: 4vh;
 }
 
 .island-image {
